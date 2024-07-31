@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            margin: 50px;
+            position:relative;
+            /* background-color: purple; */
+            animation-name: example;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            
+            
+        }
+        .box:hover {
+            /* transform: perspective(700px) translateX(100px); */
+        }
+
+        @keyframes example {
+            0% {background-color: red; left: 0px; top: 0px}
+            25% {background-color: yellow; left: 200px; top: 0px}
+            50% {background-color: blue; left: 200px; top: 200px}
+            75% {background-color: green; left: 0px; top: 200px}
+            100% {background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <script>
+        const circle = document.querySelector('.box');
+        let angle = 0;
+
+        function rotate() {
+            angle = (angle + 1) % 360; // Increment the angle
+            const radius = 70; // Radius of the circular path
+            const x = radius * Math.cos(angle * Math.PI / 180);
+            const y = radius * Math.sin(angle * Math.PI / 180);
+
+            circle.style.transform = `translate(${x}px, ${y}px)`; // Apply translation based on angle
+            requestAnimationFrame(rotate); // Continue the animation
+        }
+
+        rotate(); // Start the rotation
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "user": [
+    {
+      "id": "81a7",
+      "name": "calvin",
+      "email": "calvin@gmail.com",
+      "age": 25
+    },
+    {
+      "id": "3b53",
+      "name": "Baron",
+      "email": "Baron@gmail.com",
+      "age": 25
+    },
+    {
+      "id": "e517",
+      "name": "Calvin angelo",
+      "email": "Angelo_calvin@yahoo.co.id",
+      "age": 30
+    },
+    {
+      "id": "f8bf",
+      "name": "bui minh duc",
+      "email": "buiminhduc@gmail.com",
+      "age": 27
+    }
+  ]
+}
