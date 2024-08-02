@@ -1,3 +1,9 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Calvin App | About Us",
+  description: "About us page",
+}
 export default function AboutUS() {
   return (
     <div>
